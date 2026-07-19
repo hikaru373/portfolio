@@ -24,4 +24,4 @@ portfolio
 <br><br><br>
 # ④ 使用技術
 + HTML/CSS
-+ JavaScrip
++ JavaScript
