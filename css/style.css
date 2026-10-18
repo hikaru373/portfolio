@@ -62,13 +62,23 @@ header p{
 
 section{
     padding:70px 0;
+    text-align:center;
 }
 
 h2{
     font-size:34px;
     margin-bottom:30px;
-    border-left:5px solid #3b82f6;
-    padding-left:15px;
+    text-align:center;
+}
+
+h2::after{
+    content:"";
+    display:block;
+    width:60px;
+    height:4px;
+    margin:10px auto 0;
+    background:#3b82f6;
+    border-radius:2px;
 }
 
 .card{
@@ -84,7 +94,7 @@ h2{
 }
 
 ul{
-    padding-left:25px;
+    list-style-position:inside;
 }
 
 .project{
@@ -94,6 +104,8 @@ ul{
     padding:25px;
     border-radius:15px;
     flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
 }
 
 .project img{
@@ -103,6 +115,7 @@ ul{
 
 .project-text{
     flex:1;
+    text-align:center;
 }
 
 .project span{
