@@ -110,25 +110,86 @@
         <div class="container">
             <h2>プロジェクト</h2>
 
-            <div class="project">
+            <div class="works">
+                <button class="work" data-modal="modal-analyzer">
+                    <div class="work-image"><img src="images/atcoder-learning-analyzer.png" alt="AtCoder Learning Analyzer"></div>
+                    <p class="work-title">AtCoder Learning Analyzer</p>
+                    <p class="work-sub">Webアプリ</p>
+                </button>
+                <button class="work" data-modal="modal-sample-copy">
+                    <div class="work-image"><img src="images/atcoder-sample-copy.png" alt="AtCoder Sample Copy"></div>
+                    <p class="work-title">AtCoder Sample Copy</p>
+                    <p class="work-sub">Chrome拡張機能</p>
+                </button>
+                <button class="work" data-modal="modal-auto-test">
+                    <div class="work-image"><img src="images/atcoder-python-auto-test.jpg" alt="AtCoder Python Auto Test"></div>
+                    <p class="work-title">AtCoder Python Auto Test</p>
+                    <p class="work-sub">自動テストツール</p>
+                </button>
+            </div>
 
-                <img src="images/atcoder-learning-analyzer.png" alt="Project">
+            <div class="modal">
+                <div class="modal-viewport">
+                    <div class="modal-track">
+                        <div class="modal-slide" id="modal-analyzer">
+                            <div class="modal-content">
+                                <button class="modal-close" aria-label="閉じる">&times;</button>
+                                <div class="modal-text">
+                                    <h3>AtCoder Learning Analyzer</h3>
+                                    <p>AtCoderのユーザー名を入力すると、過去のコンテスト結果から推定レーティングを算出し、現在の実力に合った問題をランダムに表示するWebアプリです。推定された難易度帯の問題一覧ページへ直接アクセスでき、効率的な学習を支援します。</p>
+                                    <div class="modal-links">
+                                        <a href="https://atcoder-learning-analyzer.onrender.com" target="_blank" rel="noopener">サイト</a>
+                                        <a href="https://github.com/hikaru373/atcoder-learning-analyzer" target="_blank" rel="noopener">GitHub</a>
+                                    </div>
+                                    <h4>使用技術</h4>
+                                    <div class="tags"><span>HTML/CSS</span><span>Python</span><span>FastAPI</span><span>Jinja2</span><span>Redis</span><span>Render</span></div>
+                                </div>
+                                <div class="modal-image">
+                                    <img src="images/atcoder-learning-analyzer.png" alt="AtCoder Learning Analyzer">
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="project-text">
-                    <h1>AtCoder Learning Analyzer</h1>
-                    <br>
-                    <p>AtCoderのコンテスト履歴を解析し、現在の実力に合った問題を推薦するWebアプリです。</p>
-                    <br>
-                    <br>
-                    <p><strong>使用技術</strong></p>
-                    <span style="background-color: rgb(65, 151, 186);">HTML/CSS</span>
-                    <span style="background-color: rgb(65, 151, 186);">Python</span>
-                    <span style="background-color: rgb(65, 151, 186);">Redis</span>
-                    <br><br>
+                        <div class="modal-slide" id="modal-sample-copy">
+                            <div class="modal-content">
+                                <button class="modal-close" aria-label="閉じる">&times;</button>
+                                <div class="modal-text">
+                                    <h3>AtCoder Sample Copy</h3>
+                                    <p>AtCoderの問題ページに表示されるすべてのサンプル入出力を、ワンクリックで一括コピーできるChrome拡張機能です。ローカル自動テストツールと組み合わせて、サンプルテストを効率化できます。</p>
+                                    <div class="modal-links">
+                                        <a href="https://chromewebstore.google.com/detail/atcoder-sample-copy/bjankhpbegjhlkihejjacecbnhbmhhef" target="_blank" rel="noopener">Chrome ウェブストア</a>
+                                        <a href="https://github.com/hikaru373/atcoder-sample-copy" target="_blank" rel="noopener">GitHub</a>
+                                    </div>
+                                    <h4>使用技術</h4>
+                                    <div class="tags"><span>JavaScript</span><span>Manifest V3</span></div>
+                                </div>
+                                <div class="modal-image">
+                                    <img src="images/atcoder-sample-copy.png" alt="AtCoder Sample Copy">
+                                </div>
+                            </div>
+                        </div>
 
-                    <a href="https://github.com/hikaru373/atcoder-learning-analyzer" target="_blank">GitHub</a>
+                        <div class="modal-slide" id="modal-auto-test">
+                            <div class="modal-content">
+                                <button class="modal-close" aria-label="閉じる">&times;</button>
+                                <div class="modal-text">
+                                    <h3>AtCoder Python Auto Test</h3>
+                                    <p>AtCoderの解答をローカルで自動テストするPython製のツールです。AtCoder Sample Copy でコピーしたサンプル入出力を使ってテストを実行し、AC・WA・RE・TLE を判定します。実行ファイルや制限時間はコマンドライン引数で変更できます。</p>
+                                    <div class="modal-links">
+                                        <a href="https://github.com/hikaru373/atcoder-python-auto-test" target="_blank" rel="noopener">GitHub</a>
+                                    </div>
+                                    <h4>使用技術</h4>
+                                    <div class="tags"><span>Python</span></div>
+                                </div>
+                                <div class="modal-image">
+                                    <img src="images/atcoder-python-auto-test.jpg" alt="AtCoder Python Auto Test">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
+                <button class="modal-nav modal-prev" aria-label="前のプロジェクト">&#8249;</button>
+                <button class="modal-nav modal-next" aria-label="次のプロジェクト">&#8250;</button>
             </div>
         </div>
     </section>
