@@ -138,6 +138,49 @@ ul{
     list-style-position:inside;
 }
 
+.skill-list{
+    list-style:none;
+    width:660px;
+    max-width:100%;
+    margin:0 auto;
+    text-align:left;
+    display:grid;
+    grid-template-columns:190px 1fr;
+    column-gap:128px;
+}
+
+.skill-list li{
+    grid-column:1 / -1;
+    display:grid;
+    grid-template-columns:subgrid;
+    padding:10px 0;
+    border-bottom:1px solid #e6f4fc;
+}
+
+.skill-list li:last-child{
+    border-bottom:none;
+}
+
+.skill-name{
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+    .skill-list{
+        grid-template-columns:1fr;
+    }
+
+    .skill-list li{
+        grid-template-columns:1fr;
+        gap:4px;
+    }
+
+    .skill-use{
+        font-size:14px;
+        color:#666;
+    }
+}
+
 .timeline{
     position:relative;
     max-width:800px;
